@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Médicos</title>
+    <link rel="stylesheet" href="/web/css/medico.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerenciar Médicos Cadastrados</h2>
+
+        <!-- Formulário de Cadastro -->
+        <div class="form-inline">
+            <input type="text" id="nomeMedico" placeholder="Nome do Médico" required>
+            <input type="text" id="matricula" placeholder="Matrícula" required>
+            <input type="text" id="telefone" placeholder="Telefone" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="idTelefoneMedico" placeholder="ID Telefone Médico" required>
+            <button class="button" id="cadastrarBtn">Cadastrar Médico</button>
+        </div>
+
+        <!-- Tabela de Médicos Cadastrados -->
+        <table id="tabelaMedicos">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Matrícula</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>ID Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="no-data">
+                    <td colspan="5">Nenhum médico cadastrado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="/trabalhomedico-0.1/web/index.html"><button>Voltar</button></a>
+
+    <script src="/web/JS/medico.js"></script>
+</body>
+</html>

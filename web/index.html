@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Hospitalar - Página Inicial</title>
+    <link rel="stylesheet" href="/web/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/web/JS/index.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>Sistema Hospitalar</h1>
+        <ul>
+            <li><a href="#" class="ajax-link" data-url="/web/index.html">Home</a></li>
+            <li><a href="#" class="ajax-link" data-url="/web/agendamentos.html">Marcar Consultas</a></li>
+            <li><a href="#" class="ajax-link" data-url="/web/cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <!-- Card Médicos -->
+        <div class="card">
+            <h2>Médicos</h2>
+            <p>Visualizar e gerenciar médicos cadastrados.</p>
+            <button class="ajax-link" data-url="/web/medico.html">Acessar Médicos</button>
+        </div>
+
+        <!-- Card Clientes -->
+        <div class="card">
+            <h2>Pacientes</h2>
+            <p>Visualizar e gerenciar clientes cadastrados.</p>
+            <button class="ajax-link" data-url="/web/cliente.html">Acessar Clientes</button>
+        </div>
+
+        <!-- Card Últimas Consultas -->
+        <div class="card">
+            <h2>Últimas Consultas</h2>
+            <p>Visualizar o histórico de consultas recentes.</p>
+            <button class="ajax-link" data-url="/web/consulta.html">Ver Consultas</button>
+        </div>
+
+        <!-- Card Catálogo de Medicamentos -->
+        <div class="card">
+            <h2>Catálogo de Medicamentos</h2>
+            <p>Acessar e gerenciar o catálogo de medicamentos.</p>
+            <button class="ajax-link" data-url="/web/estoque.html">Ver Medicamentos</button>
+        </div>
+
+        <!-- Card Catálogo de Exames -->
+        <div class="card">
+            <h2>Catálogo de Exames</h2>
+            <p>Acessar e gerenciar o catálogo de exames.</p>
+            <button class="ajax-link" data-url="/web/exames.html">Ver Exames</button>
+        </div>
+    </div>
+
+    <!-- Div para carregar o conteúdo via AJAX -->
+    <div id="ajax-content"></div>
+
+</body>
+</html>

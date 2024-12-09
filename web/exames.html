@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Exames</title>
+    <link rel="stylesheet" href="/web/css/exames.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Catálogo de Exames</h2>
+
+        <!-- Formulário para adicionar novo exame -->
+        <div class="form-section">
+            <h3>Adicionar Novo Exame</h3>
+            <label for="nomeExame">Nome do Exame:</label>
+            <input type="text" id="nomeExame" placeholder="Digite o nome do exame">
+
+            <label for="codigoExame">Código:</label>
+            <input type="text" id="codigoExame" placeholder="Digite o código">
+
+            <label for="tipoExame">Tipo de Exame:</label>
+            <input type="text" id="tipoExame" placeholder="Digite o tipo de exame">
+
+            <label for="precoExame">Preço (R$):</label>
+            <input type="number" id="precoExame" placeholder="Digite o preço">
+
+            <label for="disponibilidadeExame">Disponibilidade:</label>
+            <input type="text" id="disponibilidadeExame" placeholder="Disponível / Indisponível">
+
+            <button class="button" onclick="adicionarExame()">Adicionar Exame</button>
+        </div>
+
+        <!-- Tabela de Exames -->
+        <table id="tabelaExames">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Código</th>
+                    <th>Tipo</th>
+                    <th>Preço (R$)</th>
+                    <th>Disponibilidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="no-data">
+                    <td colspan="5">Nenhum exame cadastrado</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="/web/index.html"><button class="btnv">Voltar</button></a>
+
+    <script src="/web/JS/exames.js"></script>
+</body>
+</html>
